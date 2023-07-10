@@ -1,17 +1,17 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Monaco', monospace;
     display: flex;
     flex-direction: column; 
     margin: 0;
+    color: white;
 }
 .header {
     display: flex;
     margin: 0;
-    padding:  16px;
+    padding: 4px 16px;
     align-items: center;
     justify-content: space-between;
     background-color: #146C94;
-    height:
 }
 ul {
     list-style-type: none;
@@ -19,17 +19,39 @@ ul {
     gap: 8px;
 }
 .one-container {
-    flex-direction: column;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #19A7CE;
+    border-bottom: 5px dotted #146C94;
 }
-.one-container .small-box{
-    border: 1px solid black;
+.sub-one-container{
+    margin: 0;
     display: flex;
     background-color: #146C94;
-    height: 100px;
-    width: 100px;
+    padding: 12px 12px;
+    height: 150px;
+    width: 350px;
+    color: white;
+    flex-direction: column;
+    border-radius: 4px;
+    font-size: 13px;
+    
+}
+
+.sub-one-container button {
+    margin-top: 10px;
+    color: white;
+    background-color: #19A7CE;
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 500;
+}
+button:hover {
+    transition: 0.3s;
+    opacity: 80%;
+    cursor: pointer;
 }
