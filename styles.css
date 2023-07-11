@@ -23,8 +23,8 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #19A7CE;
-    border-bottom: 5px dotted #146C94;
+    background-color: #F6F1F1;
+    border-bottom: 5px dotted #AFD3E2;
 }
 .sub-one-container{
     margin: 0;
@@ -37,7 +37,7 @@ ul {
     flex-direction: column;
     border-radius: 4px;
     font-size: 13px;
-    
+    box-shadow: 4px 4px 2px gray;
 }
 
 .sub-one-container button {
@@ -49,22 +49,35 @@ ul {
     border-radius: 4px;
     font-size: 20px;
     font-weight: 500;
+    box-shadow: 0 2px rgb(148, 165, 171);
 }
 button:hover {
     transition: 0.3s;
     opacity: 80%;
     cursor: pointer;
+    transform: translateY(2px);
+    box-shadow: none;
 }
 .two-container {
     color: black;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #F6F1F1;
+    height: 565px;
+    justify-content: center;
+    
+}
+#title {
+    background-color: #19A7CE;
+    border-radius: 4px;
+    padding: 0 4px;
+    color: white;
 }
 .plates {
     display: flex;
     gap: 8px;
+    
 }
 .plate-one, .plate-two, .plate-three {
     display: flex;
@@ -73,7 +86,25 @@ button:hover {
     align-items: center;
 }
 img {
-    min-height: 127px;
-    min-width: 183px;
-    box-sizing: border-box;
+    border: 10px ridge #19A7CE;
+    border-radius: 14px;
+}
+.third-container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #146C94;
+    height: 25px;
+}
+.third-container div {
+    transform: translateY(15px);
+    font-size: 12px;
+}
+.footer {
+    background-color: #146C94;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-style: italic;
 }
